@@ -53,22 +53,22 @@ const database = {
     technology: [
         {
             id: 1,
-            package: "Basic Package (Basic Sound System)",
+            package: "Basic Package",
             price: 1500
         },
         {
             id: 2,
-            package: "Navigation Package (Includes Integrated Navigation Controls)",
+            package: "Navigation Package",
             price: 2500
         },
         {
             id: 3,
-            package: "Visibility Package (Includes Side and Rear Cameras)",
+            package: "Visibility Package",
             price: 5000
         },
         {
             id: 4,
-            package: "Ultra Package (Includes Navigation and Visibility Packages)",
+            package: "Ultra Package",
             price: 7000
         }
     ],

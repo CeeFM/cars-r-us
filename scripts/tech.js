@@ -3,9 +3,10 @@ import { getTech, setTech } from "./database.js";
 const techs = getTech();
 
 export const techHtml = () => {
-    return `<h2>Technology Packages</h2>
+    return `<div class="car-stuff">
+    <h2>Technologies</h2>
         <select id="tech">
-            <option value="0">Select a Technology Package</option>
+            <option value="0">Select a Tech Package</option>
             ${
                 techs.map(
                     (tech) => {
@@ -14,6 +15,7 @@ export const techHtml = () => {
                 ).join("")
             }
         </select>
+        </div>
     `
 }
 

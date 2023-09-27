@@ -3,7 +3,8 @@ import { getPaint, setPaint } from "./database.js";
 const paints = getPaint();
 
 export const paintHtml = () => {
-    let html = `<h2>Paints</h2>`
+    let html = `<div class="car-stuff">
+    <h2>Paints</h2>`
 
     html += `<select id="paint">`
     html += `<option value="0">Select a Paint Color</option>`
@@ -15,7 +16,8 @@ export const paintHtml = () => {
     )
 
     html += arrayOfPaints.join("")
-    html += "</select>"
+    html += `</select>
+    </div>`
     return html
 }
 
