@@ -41,7 +41,7 @@ const buildOrderListItem = (order) => {
     })
 
     return `<li>
-    Order #${order.id} was placed on ${order.timestamp} and costs a total of ${costString}
+    ${foundPaint.color} car with ${foundWheel.type} wheels, ${foundInt.fabric} interior, and the ${foundTech.package} for a total cost of ${costString}. 
     </li>`
 }
 
@@ -52,7 +52,7 @@ export const Orders = () => {
     */
     const orders = getOrders()
 
-    let html = `<h2>Order List</h2>
+    let html = `<h2>Custom Car Orders</h2>
     <ul>`
 
     const listItems = orders.map(buildOrderListItem)

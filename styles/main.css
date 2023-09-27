@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+* {
+    font-family: "Comfortaa", Arial, sans-serif;
+	line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Patua One", serif;
+    letter-spacing: 2px;
+  }
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 200;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.car-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.car-stuff {
+    flex-basis: 20%;
+    background-color: rgb(255, 247, 176);
+    border: dotted rgb(46, 186, 186) 2px;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 20px 75px;
+    box-shadow: 10px 10px 10px -4px rgb(125, 125, 125);
+}
+
+#orderButton  {
+    background-color: rgb(13, 67, 13);
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+
+.orders li {
+    background: rgb(192, 215, 241);
+    list-style-type: none;
+    border: dotted blue 2px;
+    padding: 20px;
+    margin: 15px;
+}

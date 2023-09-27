@@ -3,7 +3,8 @@ import { getInterior, setInt } from "./database.js";
 const interiors = getInterior();
 
 export const intHtml = () => {
-    let html = `<h2>Interiors</h2>`
+    let html = `<div class="car-stuff">
+    <h2>Interiors</h2>`
     html += `<select id="int">`
     html += `<option value="0">Select an Interior Fabric</option>`
 
@@ -11,7 +12,8 @@ export const intHtml = () => {
         html += `<option value="${interior.id}">${interior.fabric}</option>`
     }
 
-    html += "</select>"
+    html += `</select>
+    </div>`
     return html
 }
 

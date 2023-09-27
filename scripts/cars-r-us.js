@@ -16,18 +16,20 @@ document.addEventListener(
 
 export const carsRUs = () => {
     return `
-    <h1>Cars R Us!</h1>
+    <h1>Cars 'R Us: Personal Car Builder</h1>
     <h3>We ain't even kidding, bro. We got them thangs thangin' up in here!</h3>
-    <div>
-    ${intHtml()}
+    <div class="car-container">
     ${paintHtml()}
-    ${techHtml()}
+    ${intHtml()}
     ${wheelsHtml()}
+    ${techHtml()}
     </div>
     <br>
     <article>
-    <button id="orderButton">Create Custom Order</button>
+    <button id="orderButton">Place Car Order</button>
     </article>
     <br>
-    ${Orders()}` 
+    <div class="orders">
+    ${Orders()}
+    </div>` 
 }

@@ -3,7 +3,8 @@ import { getWheels, setWheels } from "./database.js";
 const wheels = getWheels();
 
 export const wheelsHtml = () => {
-    let html = `<h2>Wheels</h2>
+    let html = `<div class="car-stuff">
+    <h2>Wheels</h2>
     <select id="wheels">
         <option value="0">Select Your Wheels</option>`
 
@@ -11,7 +12,8 @@ export const wheelsHtml = () => {
         html += `<option value="${wheel.id}">${wheel.type}</option>`
     }
 
-    html += `</select>`
+    html += `</select>
+    </div>`
     return html
 }
 
