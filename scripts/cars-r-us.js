@@ -4,6 +4,7 @@ import { techHtml } from "./tech.js";
 import { wheelsHtml } from "./wheels.js";
 import { Orders } from "./orders.js";
 import { addCustomOrder } from "./database.js";
+import { Types } from "./types.js";
 
 document.addEventListener(
     "click",
@@ -25,6 +26,7 @@ export const carsRUs = () => {
     ${techHtml()}
     </div>
     <br>
+    ${Types()}
     <article>
     <button id="orderButton">Place Car Order</button>
     </article>

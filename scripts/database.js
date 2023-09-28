@@ -149,6 +149,10 @@ export const setWheels = (id) => {
     database.orderBuilder.wheelId = id
 }
 
+export const setType = (id) => {
+    database.orderBuilder.typeId = id
+}
+
 export const addCustomOrder = () => {
     //Copy the current state of user choices
     const newOrder = {...database.orderBuilder}
