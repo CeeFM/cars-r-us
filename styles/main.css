@@ -57,3 +57,21 @@ h1 {
     padding: 20px;
     margin: 15px;
 }
+
+.type-list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.type-list li {
+    padding: 10px;
+    margin-top: -40px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+}

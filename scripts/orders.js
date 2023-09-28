@@ -35,6 +35,12 @@ const buildOrderListItem = (order) => {
     totalCost += foundTech.price
     totalCost += foundWheel.price
 
+    if (order.typeId === 2) {
+        totalCost = totalCost * 1.5
+    } else if (order.typeId === 3) {
+        totalCost = totalCost * 2.25
+    }
+
     const costString = totalCost.toLocaleString("en-US", {
         style: "currency",
         currency: "USD"
