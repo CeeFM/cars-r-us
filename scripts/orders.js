@@ -35,10 +35,15 @@ const buildOrderListItem = (order) => {
     totalCost += foundTech.price
     totalCost += foundWheel.price
 
+    let vehicle = "car"
+
     if (order.typeId === 2) {
         totalCost = totalCost * 1.5
+        vehicle = "SUV"
+
     } else if (order.typeId === 3) {
         totalCost = totalCost * 2.25
+        vehicle = "BIG OL' TRUCK"
     }
 
     const costString = totalCost.toLocaleString("en-US", {
@@ -47,7 +52,7 @@ const buildOrderListItem = (order) => {
     })
 
     return `<li>
-    ${foundPaint.color} car with ${foundWheel.type} wheels, ${foundInt.fabric} interior, and the ${foundTech.package} for a total cost of ${costString}. 
+    ${foundPaint.color} ${vehicle} with ${foundWheel.type} wheels, ${foundInt.fabric} interior, and the ${foundTech.package} for a total cost of ${costString}. 
     </li>`
 }
 
